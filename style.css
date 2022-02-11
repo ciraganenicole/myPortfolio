@@ -1,12 +1,9 @@
-body {
+#container {
   background-image: url("images/capt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: darken;
   background-size: 95%;
-}
-
-#container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,4 +101,133 @@ button {
 .btn {
   width: 40px;
   height: 40px;
+}
+
+.My-Works {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 24px;
+}
+
+#proje1 {
+  grid-row: 1 / 2;
+}
+
+#projet2 {
+  grid-row: 2 / 3;
+}
+
+#projet3 {
+  grid-row: 3 / 4;
+}
+
+#projet4 {
+  grid-row: 4 / 5;
+}
+
+#projet5 {
+  grid-row: 5 / 6;
+}
+
+#projet6 {
+  grid-row: 6 / 7;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ebf0ee;
+  border-radius: 8px;
+  height: 400px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-space {
+  width: 100%;
+  height: 300px;
+  background-color: #ebf0ee;
+}
+
+h2 {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  text-align: center;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.lang {
+  display: flex;
+  margin-right: 10px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  letter-spacing: 0.03em;
+  padding: 8px 12px 8px 12px;
+}
+
+.text {
+  background-color: white;
+}
+
+.b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 130px;
+  height: 48px;
+  padding: 12px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 100px;
+  margin-bottom: 24px;
+}
+
+.work {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 48px;
+  height: 4px;
+  margin-bottom: 20px;
 }
