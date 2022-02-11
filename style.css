@@ -115,7 +115,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   text-align: center;
 }
@@ -152,33 +151,9 @@ button {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: end;
   align-items: center;
-}
-
-.framework {
-  background: #ebf0ee;
-  border: 1px solid #c1c7d0;
-  box-sizing: border-box;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.skills {
-  background: #ebf0ee;
-  border: 1px solid #c1c7d0;
-  box-sizing: border-box;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  height: 350px;
 }
 
 .list {
@@ -207,10 +182,22 @@ button {
   padding: 8px 12px 8px 12px;
 }
 
-.image {
-  width: 80px;
-  height: 80px;
-  background: #ebf0ee;
+#first {
+  background-image: url(images/icon2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#second {
+  background-image: url(images/icon2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#third {
+  background-image: url(images/icon2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .titre {
@@ -229,7 +216,7 @@ button {
   margin-top: 20px;
 }
 
-.resume:focus {
+.resume:active {
   background-color: #008552;
   border: 1px solid #008552;
 }
