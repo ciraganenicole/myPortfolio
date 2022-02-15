@@ -205,8 +205,7 @@ h2 {
   background-color: #36b37f;
   border-radius: 4px;
   color: #fff;
-  margin-left: 100px;
-  margin-bottom: 24px;
+  margin: auto;
 }
 
 .work {
@@ -380,6 +379,9 @@ button:active {
 .contact-form {
   display: flex;
   flex-direction: column;
+  background-image: url("images/contact-form-vector.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .contact-form form {
@@ -391,13 +393,9 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.contact {
   row-gap: 24px;
 }
 
-.contact,
 .contact-list,
 .text {
   width: 100%;
@@ -405,11 +403,10 @@ button:active {
 
 .contact-input,
 .textarea {
-  /* max-width: 327px; */
   width: 100%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  /* height: 48px; */
+  box-sizing: border-box;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   font-size: 15px;
