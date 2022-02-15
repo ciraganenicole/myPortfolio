@@ -375,9 +375,6 @@ button:active {
   color: #42526e;
 }
 
-
-/* contact form */
-
 .contact-form {
   display: flex;
   flex-direction: column;
