@@ -202,7 +202,7 @@
       </section>
     </section>
     <section class="contact-form">
-      <p>
+      <p class="contact-paragraph">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
@@ -215,8 +215,10 @@
               type="text"
               id="name"
               name="user_name"
-              placeholder="Full Name"
+              placeholder="Full Name (max 30 characters)"
               class="contact-input"
+              maxlength="30"
+              required
             />
           </li>
           <li class="contact-list">
@@ -227,6 +229,8 @@
               name="user_email"
               placeholder="Email address"
               class="contact-input"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
             />
           </li>
           <li class="text">
@@ -235,8 +239,10 @@
               id="msg"
               name="user_message"
               rows="5"
-              placeholder="Enter text here"
+              placeholder="Enter text here (max 500 characters)"
               class="textarea"
+              maxlength="500"
+              required
             ></textarea>
           </li>
         </ul>
@@ -261,7 +267,7 @@
           </li>
         </ul>
       </div>
-      <a href="mailto:ciraganenicole@gmail.com">ciraganenicole@gmail.com</a>
+      <a class="my-email-address" href="mailto:ciraganenicole@gmail.com">ciraganenicole@gmail.com</a>
     </section>
   </body>
 </html>

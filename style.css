@@ -1,5 +1,5 @@
 #container {
-  background-image: url('images/capt.png');
+  background-image: url("images/capt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: darken;
@@ -10,7 +10,7 @@
 }
 
 .nav-item1 {
-  font-family: 'Inter', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: "Inter", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -59,7 +59,7 @@ img {
   text-align: center;
   width: 327px;
   height: 192px;
-  font-family: 'Inter', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: "Inter", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -75,7 +75,7 @@ img {
   width: 327px;
   height: 164px;
   text-align: center;
-  font-family: 'Inter', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: "Inter", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -153,7 +153,7 @@ button {
 }
 
 h2 {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -174,7 +174,7 @@ h2 {
   margin-right: 10px;
   background: #ebf0ee;
   border-radius: 4px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -197,7 +197,7 @@ h2 {
   width: 130px;
   height: 48px;
   padding: 12px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -210,7 +210,7 @@ h2 {
 }
 
 .work {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -256,7 +256,7 @@ h2 {
   top: 285px;
   background: #36b37f;
   border-radius: 4px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -301,7 +301,7 @@ h2 {
   margin-right: 5px;
   background-color: #fff;
   border-radius: 4px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -335,7 +335,7 @@ h2 {
   height: 32px;
   left: -5px;
   top: 0;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -351,7 +351,7 @@ button:active {
 }
 
 .abm {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -367,7 +367,7 @@ button:active {
   height: 189px;
   left: 0;
   top: 72px;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -407,6 +407,8 @@ button:active {
 .textarea {
   /* max-width: 327px; */
   width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   /* height: 48px; */
   border: 1px solid #d0d9d4;
   border-radius: 4px;
@@ -416,6 +418,27 @@ button:active {
   padding: 18px 9px;
 }
 
+.contact-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #172b4d;
+}
+
 .textarea {
+  border-color: #60c095;
+}
+
+.textarea::placeholder {
   color: #091e42;
+}
+
+.my-email-address {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #42526e;
 }
