@@ -318,7 +318,7 @@ h2 {
 }
 
 #first {
-  background-image: url("/.images/icon2.png");
+  background-image: url("./images/icon2.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -330,7 +330,7 @@ h2 {
 }
 
 #third {
-  background-image: url("./images/icon1.png/");
+  background-image: url("./images/icon1.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
