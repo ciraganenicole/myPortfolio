@@ -1,3 +1,7 @@
+body {
+  background-image: none;
+}
+
 #container {
   background-image: url("images/capt.png");
   background-repeat: no-repeat;
@@ -16,6 +20,7 @@
   font-size: 20px;
   line-height: 28px;
   color: #28352f;
+  margin-right: 180px;
 }
 
 .menu {
@@ -26,14 +31,11 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 100%;
   padding: 10px;
 }
 
-.box4 {
+.box3 {
   display: flex;
   justify-content: center;
 }
@@ -463,76 +465,16 @@ button:active {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
+  body {
+    background-image: url(/images/background.png);
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   #container {
-    background-image: url(/images/back.svg);
-    background-size: 140%;
-  }
-
-  .My-Works {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: auto;
-  }
-
-  .work {
-    font-size: 40px;
-  }
-
-  .content {
-    gap: 24px;
-  }
-
-  .box1 {
-    width: 600px;
-    margin: auto;
-    height: 114px;
-    text-align: center;
-  }
-
-  .box2 {
-    width: 600px;
-    text-align: center;
-    margin: auto;
-    height: 114px;
-  }
-
-  .box {
-    height: 40px;
-  }
-
-  .box4 {
-    height: 14px;
-  }
-
-  .line {
-    display: none;
-  }
-
-  .abm {
-    font-size: 40px;
-    height: 70px;
-  }
-
-  .paragraph {
-    width: 600px;
-    height: 90px;
-    margin-top: -20px;
-  }
-
-  .land {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .list {
-    flex-wrap: wrap;
-  }
-
-  .language {
-    width: 300px;
+    background-image: none;
   }
 
   .container {
@@ -541,34 +483,117 @@ button:active {
 
   .cont {
     display: flex;
+    align-items: center;
   }
 
   .nav-item1 {
-    margin: 26px 20px;
-    color: #172b4d;
+    margin: 17px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  .box1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    height: 130px;
+  }
+
+  .work-section {
+    margin-top: 180px;
+  }
+
+  .work {
+    font-size: 30px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .title {
+    flex-direction: row;
+  }
+
+  .My-Works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: auto;
+  }
+
+  .box2 {
+    width: 600px;
+    height: 80px;
+  }
+
+  .box3 {
+    height: 10px;
+  }
+
+  .land {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .language {
+    height: 265px;
+    width: 30%;
+  }
+
+  .lang {
+    padding: 4px;
+  }
+
+  .resume {
+    margin-bottom: 0;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .paragraph {
+    width: 73%;
+    margin: 0;
+    height: 85px;
+  }
+
+  div {
+    position: relative;
   }
 
   .desktop {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .contact-paragraph {
-    font-size: 30px;
-    width: 463px;
-    height: 256px;
-    line-height: 52px;
-    margin-right: 24px;
   }
 
   form {
-    width: 684px;
+    width: 100%;
+  }
+
+  .contact-form {
+    background-image: none;
+  }
+
+  .contact-paragraph {
+    font-size: 25px;
+    line-height: 52px;
+    width: 90%;
+    margin-top: -60px;
   }
 
   .contact-input,
   .textarea {
-    padding: 15px;
+    padding: 5px;
     width: 100%;
   }
 
@@ -578,32 +603,81 @@ button:active {
 }
 
 @media screen and (min-width: 1100px) {
+  body {
+    background-image: url(/images/background.png);
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   #container {
-    box-sizing: border-box;
-    background-image: url(/images/back.svg);
-    background-size: 110%;
-    margin-bottom: 150px;
+    background-image: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .cont {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item1 {
+    margin: 17px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  .box1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    height: 130px;
+  }
+
+  .work-section {
+    margin-top: 300px;
+  }
+
+  .work {
+    font-size: 30px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .title {
+    flex-direction: row;
   }
 
   .My-Works {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     margin: auto;
   }
 
   .box2 {
-    width: 700px;
+    width: 600px;
     height: 80px;
   }
 
-  .box {
-    height: 30px;
+  .box3 {
+    height: 10px;
   }
 
-  .box4 {
-    height: 10px;
+  .about-me {
+    gap: 50px;
   }
 
   .land {
@@ -612,79 +686,140 @@ button:active {
   }
 
   .language {
-    width: 350px;
+    height: 265px;
+    width: 30%;
+  }
+
+  .lang {
+    padding: 4px;
+  }
+
+  .project {
+    width: 30%;
   }
 
   .paragraph {
-    width: 800px;
-    height: 96px;
+    width: 73%;
+    margin: 0;
+    height: 85px;
   }
 
   div {
     position: relative;
   }
 
-  .img1 {
-    width: 130px;
-    height: 200px;
-    position: absolute;
-  }
-
   .desktop {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .contact-paragraph {
-    font-size: 30px;
-    width: 463px;
-    height: 256px;
-    line-height: 52px;
-    margin-right: 24px;
   }
 
   form {
-    width: 684px;
+    width: 100%;
+  }
+
+  .contact-form {
+    background-image: none;
+  }
+
+  .contact-form form {
+    margin: 32px 29px;
+  }
+
+  .contact-paragraph {
+    font-size: 25px;
+    line-height: 52px;
+    width: 100%;
+    margin-top: -60px;
   }
 
   .contact-input,
   .textarea {
-    padding: 15px;
+    padding: 5px;
     width: 100%;
   }
 
   .my-email-address {
     display: none;
+  }
+
+  .contact-form-icons {
+    margin-top: 150px;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1300px) {
+  body {
+    background-image: url(/images/background.png);
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   #container {
-    box-sizing: border-box;
-    background-image: url(/images/back.svg);
-    background-size: 110%;
-    margin-bottom: 150px;
+    background-image: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .cont {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item1 {
+    margin: 17px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+  .box1 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    height: 150px;
+  }
+
+  .work-section {
+    margin-top: 450px;
+  }
+
+  .work {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .title {
+    flex-direction: row;
   }
 
   .My-Works {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     margin: auto;
   }
 
   .box2 {
     width: 700px;
-    height: 80px;
+    margin-bottom: 50px;
   }
 
-  .box {
-    height: 30px;
-  }
-
-  .box4 {
+  .box3 {
+    margin-bottom: 100px;
     height: 10px;
   }
 
@@ -694,51 +829,62 @@ button:active {
   }
 
   .language {
-    width: 350px;
+    height: 265px;
+    width: 30%;
+  }
+
+  .lang {
+    padding: 4px;
+  }
+
+  .resume {
+    margin-bottom: 50px;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .about-me {
+    margin-top: 80px;
   }
 
   .paragraph {
-    width: 800px;
-    height: 96px;
+    width: 65%;
+    margin-bottom: 20px;
+    height: 85px;
   }
 
   div {
     position: relative;
   }
 
-  .img1 {
-    width: 130px;
-    height: 200px;
-    position: absolute;
-  }
-
-  .img2 {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-  }
-
   .desktop {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .contact-paragraph {
-    font-size: 30px;
-    width: 463px;
-    height: 256px;
-    line-height: 52px;
-    margin-right: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
   }
 
   form {
-    width: 684px;
+    width: 100%;
+  }
+
+  .contact-form {
+    background-image: none;
+  }
+
+  .contact-paragraph {
+    font-size: 25px;
+    line-height: 52px;
+    width: 60%;
+    margin-top: -60px;
   }
 
   .contact-input,
   .textarea {
-    padding: 15px;
+    padding: 5px;
     width: 100%;
   }
 
@@ -746,9 +892,7 @@ button:active {
     display: none;
   }
 
-  .img3 {
-    width: 300px;
-    height: 450px;
-    float: right;
+  .contact-form-icons {
+    margin-top: 250px;
   }
 }
