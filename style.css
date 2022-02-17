@@ -3,7 +3,7 @@ body {
 }
 
 #container {
-  background-image: url("images/capt.png");
+  background-image: url("./images/capt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: darken;
@@ -318,19 +318,19 @@ h2 {
 }
 
 #first {
-  background-image: url(images/icon2.png);
+  background-image: url("/.images/icon2.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #second {
-  background-image: url(images/icon3.png);
+  background-image: url("./images/icon3.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #third {
-  background-image: url(images/icon1.png);
+  background-image: url("./images/icon1.png/");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -386,7 +386,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-image: url("images/contact-form-vector.svg");
+  background-image: url("./images/contact-form-vector.svg");
   background-repeat: no-repeat;
   background-position: 100% 95%;
 }
@@ -467,7 +467,7 @@ button:active {
 
 @media screen and (min-width: 992px) {
   body {
-    background-image: url(/images/background.png);
+    background-image: url("./images/background.png");
     background-blend-mode: darken;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -604,7 +604,7 @@ button:active {
 
 @media screen and (min-width: 1100px) {
   body {
-    background-image: url(/images/background.png);
+    background-image: url("./images/background.png");
     background-blend-mode: darken;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -749,7 +749,7 @@ button:active {
 
 @media screen and (min-width: 1300px) {
   body {
-    background-image: url(/images/background.png);
+    background-image: url("./images/background.png");
     background-blend-mode: darken;
     background-size: 100%;
     background-repeat: no-repeat;
