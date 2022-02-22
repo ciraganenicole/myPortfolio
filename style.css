@@ -210,7 +210,7 @@ h2 {
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
-  background-color: #36b37f;
+  background-color: #1f6144;
   border-radius: 4px;
   color: #fff;
   margin: auto;
@@ -271,7 +271,7 @@ a {
   height: 48px;
   left: 96px;
   top: 285px;
-  background: #36b37f;
+  background: #1f6144;
   border-radius: 4px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -336,7 +336,7 @@ a {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #36b37e;
+  color: #1f6144;
   letter-spacing: 0.03em;
   padding: 8px 12px 8px 12px;
 }
