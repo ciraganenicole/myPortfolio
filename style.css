@@ -31,6 +31,11 @@ header {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     justify-content: space-between;
+    color: #3A4A42;
+}
+
+.hamburger a, .nav-item1 a{
+  color: #3A4A42;
 }
 
 .hamburger-menu {
