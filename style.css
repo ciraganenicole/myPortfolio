@@ -1,16 +1,54 @@
 body {
   background-image: none;
+  margin: 0;
 }
 
 #container {
-  background-image: url("./images/capt.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: darken;
-  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+}
+
+.cont {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  background-color: white;
+  z-index: 3;
+  width: 100%;
+  height: 685px;
+  position: absolute;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.close {
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
 }
 
 .nav-item1 {
@@ -20,8 +58,13 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #28352f;
-  margin-right: 180px;
+  margin-right: 60px;
+  margin-left: 40px;
   transition: font-size 1s, font-weight 1s;
+}
+
+.nav-item2 {
+  margin-left: 130px;
 }
 
 .nav-item1:hover {
@@ -35,15 +78,8 @@ body {
   color: #28352f;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
 .box3 {
   display: flex;
-  justify-content: center;
 }
 
 img {
@@ -53,12 +89,18 @@ img {
 }
 
 .content {
+  background-image: url("./images/capt.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: 100%;
+  width: 100%;
+  margin: 0;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
-  margin-top: 90px;
-  padding: 5px;
+  z-index: 1;
 }
 
 .box1 {
@@ -66,27 +108,16 @@ img {
   flex-direction: column;
   text-align: center;
   width: 327px;
-  height: 192px;
   font-family: "Inter", Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 40px;
-  line-height: 52px;
   color: #172b4d;
-  margin: 58px 0;
-  margin-top: -20px;
 }
 
 .box2 {
-  display: flex;
-  flex-direction: column;
   width: 327px;
-  height: 164px;
   text-align: center;
   font-family: "Inter", Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 28px;
   color: #172b4d;
 }
@@ -109,6 +140,10 @@ button {
 .btn {
   width: 40px;
   height: 40px;
+}
+
+.work-section {
+  margin-top: 50px;
 }
 
 .My-Works {
@@ -226,10 +261,8 @@ h2 {
 
 .work {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 52px;
   text-align: center;
 }
 
@@ -245,6 +278,7 @@ h2 {
   width: 48px;
   height: 4px;
   margin-bottom: 20px;
+  margin-left: 160px;
 }
 
 .about-me {
@@ -259,6 +293,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
 a {
@@ -292,15 +327,12 @@ a {
   border: 2px solid #36b37f;
 }
 
-.cont {
-  display: none;
-}
-
 .land {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   justify-content: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 24px;
 }
 
 .language {
@@ -313,6 +345,7 @@ a {
   justify-content: end;
   align-items: center;
   height: 350px;
+  width: min-content;
 }
 
 .list {
@@ -342,18 +375,21 @@ a {
 }
 
 #first {
+  grid-row: 2/ 3;
   background-image: url("./images/icon2.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #second {
+  grid-row: 3/ 4;
   background-image: url("./images/icon3.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 #third {
+  grid-row: 1/ 2;
   background-image: url("./images/icon1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -407,9 +443,9 @@ button:active {
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  display: grid;
+  justify-content: center;
+  gap: 24px;
   background-image: url("./images/contact-form-vector.svg");
   background-repeat: no-repeat;
   background-position: 100% 95%;
@@ -425,6 +461,15 @@ button:active {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+
+.desktop {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-form-icons {
+  margin: auto;
 }
 
 .contact-list,

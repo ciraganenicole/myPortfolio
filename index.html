@@ -20,9 +20,24 @@
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
+    <div class="hamburger" id="nav">
+        <div class="hamburger-menu">
+            <nav class="nav-item1">
+                <a href="#" onclick="toogleNavBar()">Portfolio</a>
+            </nav>
+            <nav class="nav-item1">
+                <a href="#about" onclick="toogle()">About</a>
+            </nav>
+            <nav class="nav-item1">
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="close"><img src="./images/closeTab.svg" alt="" onclick="toogleNavBar()"></div>
+    </div>
     <div id="container">
         <header>
             <div class="container">
@@ -30,10 +45,10 @@
                     <a href="">Welcome</a>
                 </nav>
                 <nav class="nav-item2">
-                    <a href=""><img src="images/Enabled.png" alt="Menu" class="menu" /></a>
+                    <img src="./images/Enabled.png" alt="Menu" class="menu" onclick="toogleNavBar()" />
                 </nav>
             </div>
-            <div class="cont">
+            <div class="cont" id="nav">
                 <nav class="nav-item1">
                     <a href="">Portfolio</a>
                 </nav>
@@ -75,14 +90,12 @@
         </button>
         </section>
     </div>
-
+    </header>
     <section class="work-section">
-        <header class="title">
-            <h2 class="work">
-                My Recent Works
-            </h2>
-            <p><img src="images/Indicator.png" alt="line" class="line" /></p>
-        </header>
+        <h2 class="work">
+            My Recent Works
+        </h2>
+        <p><img src="images/Indicator.png" alt="line" class="line" /></p>
         <section class="My-Works">
             <div class="project" id="projet1">
                 <div class="empty-space"><img src="color.png" alt="" /></div>
@@ -176,7 +189,7 @@
             </div>
         </section>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about" onclick="toggle()">
         <section class="about">
             <h2 class="abm">About me</h2>
             <p class="paragraph">
@@ -219,7 +232,7 @@
             </section>
         </section>
     </section>
-    <footer class="contact-form">
+    <footer class="contact-form" id="contact">
         <div class="desktop">
             <p class="contact-paragraph">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </p>
