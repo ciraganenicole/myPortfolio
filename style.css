@@ -3,6 +3,16 @@ body {
   margin: 0;
 }
 
+.error {
+  padding: 8px;
+  color: red;
+  width: 50%;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin-left: 225px;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -653,6 +663,10 @@ button:active {
   margin-top: 20px;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
 @media screen and (min-width: 600px) {
   #container {
     background-size: 100%;
@@ -668,6 +682,10 @@ button:active {
 
   .languages {
     justify-content: center;
+  }
+
+  .invalid {
+    border: 1px solid red;
   }
 }
 
@@ -839,6 +857,10 @@ button:active {
 
   .my-email-address {
     display: none;
+  }
+
+  .invalid {
+    border: 1px solid red;
   }
 }
 
@@ -1016,6 +1038,10 @@ button:active {
 
   .contact-form-icons {
     margin-top: 150px;
+  }
+
+  .invalid {
+    border: 1px solid red;
   }
 }
 
@@ -1198,5 +1224,9 @@ button:active {
 
   .contact-form-icons {
     margin-top: 250px;
+  }
+
+  .invalid {
+    border: 1px solid red;
   }
 }
