@@ -287,14 +287,6 @@ h6 {
 }
 
 .My-Works {
-  /* justify-content: center;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 24px;
-    justify-items: center;
-    width: 85%;
-    margin-left: 7.5%; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -333,19 +325,10 @@ h6 {
   flex-direction: column;
   border: 2px solid #ebf0ee;
   border-radius: 8px;
-
-  /* height: 400px; */
   align-content: center;
   align-items: center;
   justify-content: center;
 }
-
-
-/* .empty-space{
-    width: 100%;
-    height: 300px;
-     background-color: #ebf0ee;
-} */
 
 h2 {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -681,11 +664,6 @@ button:active {
     flex-wrap: wrap;
     gap: 16px;
     margin: auto;
-
-    /* display: flex;
-        flex-direction: column;
-        gap: 24px;
-        margin: 40px; */
   }
 
   .languages {
