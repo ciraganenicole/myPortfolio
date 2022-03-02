@@ -186,17 +186,29 @@ button {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     position: relative;
+    height: auto;
+    margin-right: auto;
 }
-
+.work-img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-right: 0;
+}
 .closeTab {
     position: absolute;
     font-size: 40px;
-    color: white;
+    color: rgb(240, 237, 237);
     right: 50px;
     top: 50px;
     z-index: 3;
 }
 
+.closeTab :hover {
+    color:rgb(153, 147, 147)
+
+}
 .popup-title {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -209,7 +221,8 @@ button {
 .popup-ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 12px 0;
+    margin: 12px 0px;
+    padding: 0;
 }
 
 .popup-li {
@@ -239,6 +252,7 @@ button {
     justify-content: space-between;
     width: 100%;
     margin-top: 16px;
+    
 }
 
 .see-live {
@@ -246,7 +260,6 @@ button {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    padding: 12px 16px;
     background-color: #36b37f;
     color: white;
     font-family: 'Inter', sans-serif;
@@ -254,10 +267,13 @@ button {
     border-radius: 4px;
     border: none;
     margin-right: 12px;
+padding: 12px 16px;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 h6 {
-    margin-right: 16px;
+    margin:0 16px 0 0;
 }
 
 .popup-buttons i {
@@ -270,34 +286,45 @@ h6 {
 }
 
 .My-Works {
-    justify-content: center;
+    /* justify-content: center;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-gap: 24px;
+    justify-items: center;
+    width: 85%;
+    margin-left: 7.5%; */
+
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: auto;
 }
 
-#proje1 {
+.projet1 {
     grid-row: 1 / 2;
 }
 
-#projet2 {
+.projet2 {
     grid-row: 2 / 3;
 }
 
-#projet3 {
+.projet3 {
     grid-row: 3 / 4;
 }
 
-#projet4 {
+.projet4 {
     grid-row: 4 / 5;
 }
 
-#projet5 {
+.projet5 {
     grid-row: 5 / 6;
 }
 
-#projet6 {
+.projet6 {
     grid-row: 6 / 7;
 }
 
@@ -306,17 +333,18 @@ h6 {
     flex-direction: column;
     border: 2px solid #ebf0ee;
     border-radius: 8px;
-    height: 400px;
+    /* height: 400px; */
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
-.empty-space {
+/* .empty-space{
     width: 100%;
     height: 300px;
-    background-color: #ebf0ee;
-}
+     background-color: #ebf0ee;
+} */
+
 
 h2 {
     font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -331,6 +359,7 @@ h2 {
 .languages {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     padding: 8px 12px;
 }
@@ -381,6 +410,7 @@ h2 {
     color: #36b37f;
     border: 2px solid #36b37f;
 }
+
 
 .work {
     font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -646,9 +676,15 @@ button:active {
     }
     .My-Works {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: auto;
+
+        /* display: flex;
         flex-direction: column;
         gap: 24px;
-        margin: 40px;
+        margin: 40px; */
     }
     .languages {
         justify-content: center;
@@ -711,7 +747,7 @@ button:active {
         color: black;
         position: relative;
         top: 0;
-        left: 48%;
+        left: 95%;
     }
     .popup-buttons {
         display: none;
@@ -729,6 +765,7 @@ button:active {
         flex-direction: row;
     }
     .My-Works {
+        width: 80%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -801,6 +838,16 @@ button:active {
         background-size: 100%;
         background-repeat: no-repeat;
     }
+
+    .closeTab {
+        border-radius: 8px;
+        font-size: 40px;
+        color: black;
+        position: relative;
+        top: 0;
+        left: 95%;
+    }
+    
     #container {
         background-image: none;
     }
@@ -850,7 +897,7 @@ button:active {
         color: black;
         position: relative;
         top: 0;
-        left: 48%;
+        left: 95%;
     }
     .popup-buttons {
         display: none;
@@ -945,6 +992,15 @@ button:active {
         background-size: 100%;
         background-repeat: no-repeat;
     }
+
+    .closeTab {
+        border-radius: 8px;
+        font-size: 40px;
+        color: black;
+        position: relative;
+        top: 0;
+        left: 95%;
+    }
     #container {
         background-image: none;
     }
@@ -988,14 +1044,7 @@ button:active {
         align-items: center;
         padding: 10px;
     }
-    .closeTab {
-        border-radius: 8px;
-        font-size: 40px;
-        color: black;
-        position: relative;
-        top: 0;
-        left: 48%;
-    }
+    
     .popup-buttons {
         display: none;
     }

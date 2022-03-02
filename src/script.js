@@ -11,13 +11,13 @@ function toogle() {
 
 for (let i = 0; i < works.length; i += 1) {
     let liText = '';
-    for (let j = 0; j < works[i].technolgies.length; j += 1) liText += `<li>${works[i].technolgies[j]}</li>`;
+    for (let j = 0; j < works[i].technolgies.length; j += 1) liText += `<li class="lang">${works[i].technolgies[j]}</li>`;
 
     const work = document.createElement('div');
-    work.classList.add('work');
+    work.classList.add('project');
+    work.classList.add(`projet${i+1}`);
     work.innerHTML = `
-              <div class="project " id="projet1 ">
-                <div class="empty-space "><img src="${works[i].imageSrc} " alt=" " /></div>
+                <img class="work-img" src="${works[i].imageSrc}" alt=" " /> 
                 <div class="text ">
                     <h2>
                     ${works[i].titre}
@@ -27,10 +27,9 @@ for (let i = 0; i < works.length; i += 1) {
                     </ul>
                     <button  id="${works[i].id}" type='button' class="b ">See Project</button>
                 </div>
-            </div>
     `;
 
-    document.querySelector('.My-Works').appendChild(work);
+    document.querySelector('#My-works').appendChild(work);
 }
 
 const previousBody = document.body;
@@ -39,7 +38,7 @@ const previousBody = document.body;
 function pop(event) {
     const clickButton = event.target.getAttribute('id');
     console.log(clickButton);
-    
+
     let currentWork = [];
 
     works.forEach((o) => {
@@ -87,7 +86,7 @@ function pop(event) {
   <div class="popup-buttons">
     <button type="button" class="see-live see-lives">
       <h6>See Live</h6>
-      <i class="fa fa-github"></i>
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
     </button>
     <button type="button" class="see-live see-source">
       <h6>See Source</h6>
