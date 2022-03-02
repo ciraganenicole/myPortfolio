@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <title>Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221100747-1"></script>
     <script>
@@ -18,270 +22,150 @@
 
         gtag('config', 'UA-221100747-1');
     </script>
-
-    <title>My Portfolio</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="hamburger" id="nav">
         <div class="hamburger-menu">
             <nav class="nav-item1">
-                <a href="#" onclick='toogle()' class="hambMenu">Portfolio</a>
+                <a href="#">Portfolio</a>
             </nav>
             <nav class="nav-item1">
-                <a href="#about" class="hambMenu" id="hamb" onclick='toogle()'>About</a>
+                <a href="#about-myself">About</a>
             </nav>
             <nav class="nav-item1">
-                <a href="#contact" class="hambMenu" id="hamb1" onclick='toogle()'>Contact</a>
+                <a href="#form">Contact</a>
             </nav>
         </div>
-        <div class="close"><img src="./images/closeTab.svg" alt="" onclick='toogle()'></div>
+        <div class="close"><img src="./images/cancel.png" alt="close logo"></div>
     </div>
-    <div id="container">
-        <header>
-            <div class="container">
-                <nav class="nav-item1">
-                    <a href='' id='item'>Welcome</a>
-                </nav>
-                <nav class='nav-item2'>
-                    <img src='./images/Enabled.png' alt='Menu' class='menu' onclick='toogle()' />
-                </nav>
-            </div>
-            <div class="cont " id="nav ">
-                <nav class="nav-item1 ">
-                    <a href=" ">Portfolio</a>
-                </nav>
-                <nav class="nav-item1 ">
-                    <a href=" ">About</a>
-                </nav>
-                <nav class="nav-item1 ">
-                    <a href=" ">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <section class="content ">
-            <h1 class="box1 ">
-                Hey there. I’m Alex.
-                <span>I’m a software developer</span>
-            </h1>
-            <p class="box2 ">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <ul class="box3 ">
-                <li class="social-media ">
-                    <a href=" "><img src="images/twitter.png " alt="twitter " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/Linkedin.png " alt="Linkedln " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/github.png " alt="m " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/fingers.png " alt="github " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/m.png " alt="two fingers " /></a>
-                </li>
-            </ul>
-            <button type='button'>
-          <img src="images/Disabled.png " alt="button " class="btn " />
-        </button>
-        </section>
-    </div>
+    <header>
+        <div class="mob-menu" id="nav">
+            <h1 class="header-text">Welcome</h1>
+            <img src="./images/menu.png" alt="menu expand button" />
+        </div>
+
+        <ul class="desk-menu">
+            <li><a href="#headline">Portfolio</a></li>
+            <li><a href="#about-myself">About</a></li>
+            <li><a href="#form">Contact</a></li>
+        </ul>
     </header>
-    <section class="work-section ">
-        <h2 class="work ">
-            My Recent Works
-        </h2>
-        <p><img src="images/Indicator.png " alt="line " class="line " /></p>
-        <section class="My-Works ">
-            <div class="project " id="projet1 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-            <div class="project " id="projet2 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-            <div class="project " id="projet3 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-            <div class="project " id="projet4 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-            <div class="project " id="projet5 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-            <div class="project " id="projet6 ">
-                <div class="empty-space "><img src="color.png " alt=" " /></div>
-                <div class="text ">
-                    <h2>
-                        Multi-Post Stories<br /> Gain+Glory
-                    </h2>
-                    <ul class="languages ">
-                        <li class="lang ">Ruby on rails</li>
-                        <li class="lang ">css</li>
-                        <li class="lang ">JavScript</li>
-                        <li class="lang ">html</li>
-                    </ul>
-                    <button type='button' class="b ">See Project</button>
-                </div>
-            </div>
-        </section>
+    <section id="headline" class="headline">
+        <h1>
+            Hey there. I'm Axel<br /><span id="second-h1">I'm a software developer</span
+        >
+      </h1>
+      <p>
+        I can help you build your product, feature or website look through some
+        of my work and axperience! If you like what you see and have a project
+        you need coded, don't hesitate to contact me
+      </p>
+      <ul class="social">
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-hand-peace-o"></i></a></li>
+      </ul>
+      <img class="more-img" src="./images/more2.svg" alt="Description expansion tab" />
     </section>
-    <section class="about-me " id='about'>
-        <section class="about ">
-            <h2 class="abm ">About me</h2>
-            <p class="paragraph ">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-
-            <button type='button' class="resume ">Get My Resume</button>
-        </section>
-
-
-        <section class="land ">
-            <section class="language " id="third ">
-                <h2 class="titre " id="fonct ">Languages</h2>
-                <ul class="list ">
-                    <li class="lan ">Javascript</li>
-                    <li class="lan ">Ruby</li>
-                    <li class="lan ">Html</li>
-                    <li class="lan ">Css</li>
-                </ul>
-            </section>
-            <section class="language " id="first ">
-                <h2 class="titre ">Frameworks</h2>
-                <ul class="list ">
-                    <li class="lan ">Bootstrap</li>
-                    <li class="lan ">Ruby on rails</li>
-                    <li class="lan ">RSpec</li>
-                    <li class="lan ">Capybara</li>
-                    <li class="lan ">Selenium</li>
-                </ul>
-            </section>
-            <section class="language " id="second ">
-                <h2 class="titre ">Skills</h2>
-                <ul class="list ">
-                    <li class="lan ">Codekit</li>
-                    <li class="lan ">Github</li>
-                    <li class="lan ">Codepen</li>
-                    <li class="lan ">Gitlab</li>
-                    <li class="lan ">Terminal</li>
-                </ul>
-            </section>
-        </section>
+    <section class="recents-work">
+      <h2 class="recent-work">My Recent Works</h2>
+      <div class="under-bar"></div>
+      <div class="works">
+        
+        </div>
     </section>
-    <footer class="contact-form " id='contact'>
-        <div class="desktop ">
-            <p class="contact-paragraph ">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-            </p>
 
-            <form action="https://formspree.io/f/xqknqpzn " method="post ">
-                <ul class="contact ">
-                    <li class="contact-list ">
-                        <label for="name "></label>
-                        <input type="text " id="name " name="user_name " placeholder="Full Name (max 30 characters) " class="contact-input " maxlength="30 " required />
-                    </li>
-                    <li class="contact-list ">
-                        <label for="mail "></label>
-                        <input type="email " id="mail " name="user_email " placeholder="Email address " class="contact-input " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ " required />
-                    </li>
-                    <li class="text ">
-                        <label for="msg "></label>
-                        <textarea id="msg " name="user_message " rows="5 " placeholder="Enter text here (max 500 characters) " class="textarea " maxlength="500 " required></textarea>
-                    </li>
-                </ul>
-                <button type='submit' class="b ">Get in touch</button>
-
-            </form>
-
+    <section id="about-myself" class="about-myself">
+      <h2 class="about-me">About me</h2>
+      <p class="about-description">
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don’t hestiate to contact me.
+      </p>
+      <button class="resume-button">Get My Resume</button>
+      <div class="frames-langs">
+        <div class="frame">
+          <img src="./images/languages.svg" alt="languages" />
+          <h2>Languages</h2>
+          <ul class="b-langages">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>CSS</li>
+          </ul>
         </div>
-        <div class="contact-form-icons ">
-            <ul class="box3 ">
-                <li class="social-media ">
-                    <a href=" "><img src="images/twitter.png " alt="twitter " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/Linkedin.png " alt="Linkedln " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/github.png " alt="m " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/fingers.png " alt="github " /></a>
-                </li>
-                <li class="social-media ">
-                    <a href=" "><img src="images/m.png " alt="two fingers " /></a>
-                </li>
-            </ul>
 
+        <div class="frame">
+          <img src="./images/frameworks.svg" alt="frameworks" />
+          <h2>Frameworks</h2>
+          <ul class="b-langages multi">
+            <li>Bootstrap</li>
+            <li>Ruby on rails</li>
+            <li>RSpec</li>
+            <li>Capybara</li>
+            <li>Selenium</li>
+          </ul>
         </div>
-        <a class="my-email-address " href="mailto:ciraganenicole@gmail.com ">ciraganenicole@gmail.com</a>
+
+        <div class="frame">
+          <img src="./images/skills.svg" alt="" />
+          <h2>Skills</h2>
+          <ul class="b-langages multi">
+            <li>Codekit</li>
+            <li>GitHub</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="form-div">
+        <p>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+
+        <form
+          id="form"
+         
+          action="https://formspree.io/f/xqknqpzn " method="post "
+          
+        >
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="emali"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea name="message" id="message" maxlength="500" required>
+Typing something </textarea
+          >
+          <button class="resume-button" type="submit">Get in touch</button>
+        </form>
+      </div>
+      <ul class="social">
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-hand-peace-o"></i></a></li>
+      </ul>
+      <h3><a class="my-email-address " href="mailto:ciraganenicole@gmail.com ">ciraganenicole@gmail.com</a></h3>
+      <div class="end-bar"></div>
     </footer>
-
-</body>
-
+    <script type="module"src="./src/script.js"></script>
+  </body>
 </html>
