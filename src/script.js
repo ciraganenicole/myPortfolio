@@ -1,12 +1,13 @@
+import { works } from "./data.js";
 function toogle() {
     const nav = document.getElementById('nav');
     if (nav.style.display !== 'none') nav.style.display = 'none';
     else nav.style.display = 'flex'
 }
-let anchor1 = document.getElementsById('hamb');
-anchor1.onclick = toogle();
-let anchor2 = document.getElementById('hamb1');
-anchor2.onclick = toogle();
+// let anchor1 = document.getElementById('hamb');
+// anchor1.onclick = toogle();
+// let anchor2 = document.getElementById('hamb1');
+// anchor2.onclick = toogle();
 
 for (let i = 0; i < works.length; i += 1) {
     let liText = '';
@@ -15,26 +16,36 @@ for (let i = 0; i < works.length; i += 1) {
     const work = document.createElement('div');
     work.classList.add('work');
     work.innerHTML = `
-    <img src="${works[i].imageSrc}" alt="project overwiew image" />
-              <div class="work-text">
-                <h2 class="work-description">${works[i].titre}</h2>
-                <ul class="used-langages">
-                ${liText}
-                </ul>
-                <div class="work-button" id = "${works[i].id}">See Project</div>
-              </div>
+              <div class="project " id="projet1 ">
+                <div class="empty-space "><img src="${works[i].imageSrc} " alt=" " /></div>
+                <div class="text ">
+                    <h2>
+                    ${works[i].titre}
+                    </h2>
+                    <ul class="languages ">
+                    ${liText}
+                    </ul>
+                    <button  id="${works[i].id}" type='button' class="b ">See Project</button>
+                </div>
+            </div>
     `;
-    document.querySelector('.works').appendChild(work);
+
+    document.querySelector('.My-Works').appendChild(work);
 }
 
 const previousBody = document.body;
 
+
 function pop(event) {
     const clickButton = event.target.getAttribute('id');
+    console.log(clickButton);
+    
     let currentWork = [];
+
     works.forEach((o) => {
         if (clickButton === o.id) currentWork = o;
     });
+
     const popup = document.createElement('div');
     let liTech = '';
     for (let j = 0; j < currentWork.popupDescription.technolgies.length; j += 1) liTech += `<li class = 'popup-li'>${currentWork.popupDescription.technolgies[j]}</li>`;
@@ -90,7 +101,7 @@ function pop(event) {
 
     document.querySelector('.closeTab').addEventListener('click', () => {
         document.body = previousBody;
-        window.location.href = 'index.html#recentWork';
+        window.location.href = 'index.html#My-works';
     });
 
     document.querySelectorAll('.see-lives').forEach((e) => {
@@ -106,7 +117,7 @@ function pop(event) {
     });
 }
 
-const clickClick = document.querySelectorAll('.work-button');
+const clickClick = document.querySelectorAll('.b');
 clickClick.forEach((e) => {
     e.addEventListener('click', pop);
 });
