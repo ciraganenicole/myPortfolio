@@ -5,7 +5,9 @@ function toogle() {
   if (nav.style.display !== 'none') nav.style.display = 'none';
   else nav.style.display = 'flex';
 }
-toogle();
+document.querySelector('.menu').addEventListener('click', toogle);
+document.querySelector('.close').addEventListener('click', toogle);
+document.querySelectorAll('.hambMenu').forEach((e) => { e.addEventListener('click', toogle); });
 for (let i = 0; i < works.length; i += 1) {
   let liText = '';
   for (let j = 0; j < works[i].technolgies.length; j += 1) liText += `<li class="lang">${works[i].technolgies[j]}</li>`;
