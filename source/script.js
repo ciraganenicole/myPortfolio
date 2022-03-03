@@ -138,9 +138,9 @@ form.addEventListener('submit', (event) => {
 });
 
 
-document.getElementById('name').addEventListener('input',toStore);
-document.getElementById('mail').addEventListener('input',toStore);
-document.getElementById('msg').addEventListener('input',toStore);
+document.getElementById('name').addEventListener('input', toStore);
+document.getElementById('mail').addEventListener('input', toStore);
+document.getElementById('msg').addEventListener('input', toStore);
 
 
 
@@ -161,11 +161,12 @@ function toStore() {
 function toFill() {
 
     let restoredSession = JSON.parse(localStorage.getItem('storeForm'));
-    document.getElementById('name').value = restoredSession.name;
-    document.getElementById('mail').value = restoredSession.mail;
-    document.getElementById('msg').value = restoredSession.msg;
+    if (Object.keys(restoredSession).length > 0) {
+        document.getElementById('name').value = restoredSession.name;
+        document.getElementById('mail').value = restoredSession.mail;
+        document.getElementById('msg').value = restoredSession.msg;
+    }
+
 }
 
-window.onload=toFill();
-
-
+window.onload = toFill();
