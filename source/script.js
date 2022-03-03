@@ -136,3 +136,31 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+function toStore() {
+  const storeForm = {
+    name: '',
+    mail: '',
+    msg: '',
+  };
+
+  storeForm.name = document.getElementById('name').value;
+  storeForm.mail = document.getElementById('mail').value;
+  storeForm.msg = document.getElementById('msg').value;
+
+  localStorage.setItem('storeForm', JSON.stringify(storeForm));
+}
+document.getElementById('name').addEventListener('input', toStore);
+document.getElementById('mail').addEventListener('input', toStore);
+document.getElementById('msg').addEventListener('input', toStore);
+
+function toFill() {
+  const restoredSession = JSON.parse(localStorage.getItem('storeForm'));
+  if (Object.keys(restoredSession).length > 0) {
+    document.getElementById('name').value = restoredSession.name;
+    document.getElementById('mail').value = restoredSession.mail;
+    document.getElementById('msg').value = restoredSession.msg;
+  }
+}
+
+window.onload = toFill();
