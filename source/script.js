@@ -1,19 +1,19 @@
 import { works } from './data.js';
 
 function toogle() {
-  const nav = document.getElementById('nav');
-  if (nav.style.display !== 'none') nav.style.display = 'none';
-  else nav.style.display = 'flex';
+    const nav = document.getElementById('nav');
+    if (nav.style.display !== 'none') nav.style.display = 'none';
+    else nav.style.display = 'flex';
 }
 toogle();
 for (let i = 0; i < works.length; i += 1) {
-  let liText = '';
-  for (let j = 0; j < works[i].technolgies.length; j += 1) liText += `<li class="lang">${works[i].technolgies[j]}</li>`;
+    let liText = '';
+    for (let j = 0; j < works[i].technolgies.length; j += 1) liText += `<li class="lang">${works[i].technolgies[j]}</li>`;
 
-  const work = document.createElement('div');
-  work.classList.add('project');
-  work.classList.add(`projet${i + 1}`);
-  work.innerHTML = `
+    const work = document.createElement('div');
+    work.classList.add('project');
+    work.classList.add(`projet${i + 1}`);
+    work.innerHTML = `
                 <img class="work-img" src="${works[i].imageSrc}" alt=" " /> 
                 <div class="text ">
                     <h2>
@@ -26,27 +26,27 @@ for (let i = 0; i < works.length; i += 1) {
                 </div>
     `;
 
-  document.querySelector('#My-works').appendChild(work);
+    document.querySelector('#My-works').appendChild(work);
 }
 
 const previousBody = document.body;
 
 function pop(event) {
-  const clickButton = event.target.getAttribute('id');
+    const clickButton = event.target.getAttribute('id');
 
-  let currentWork = [];
+    let currentWork = [];
 
-  works.forEach((o) => {
-    if (clickButton === o.id) currentWork = o;
-  });
+    works.forEach((o) => {
+        if (clickButton === o.id) currentWork = o;
+    });
 
-  const popup = document.createElement('div');
-  let liTech = '';
-  for (let j = 0; j < currentWork.popupDescription.technolgies.length; j += 1) liTech += `<li class = 'popup-li'>${currentWork.popupDescription.technolgies[j]}</li>`;
+    const popup = document.createElement('div');
+    let liTech = '';
+    for (let j = 0; j < currentWork.popupDescription.technolgies.length; j += 1) liTech += `<li class = 'popup-li'>${currentWork.popupDescription.technolgies[j]}</li>`;
 
-  popup.classList.add('popup');
-  popup.setAttribute('id', 'popup');
-  popup.innerHTML = `
+    popup.classList.add('popup');
+    popup.setAttribute('id', 'popup');
+    popup.innerHTML = `
   <div class="popup-container">
   <div class="project-img">
       <i class="fa-solid fa-xmark closeTab"></i>
@@ -89,31 +89,31 @@ function pop(event) {
   </div>
   </div>
   `;
-  const newbody = document.createElement('body');
-  newbody.appendChild(popup);
-  document.body = newbody;
+    const newbody = document.createElement('body');
+    newbody.appendChild(popup);
+    document.body = newbody;
 
-  document.querySelector('.closeTab').addEventListener('click', () => {
-    document.body = previousBody;
-    window.location.href = 'index.html#My-works';
-  });
-
-  document.querySelectorAll('.see-lives').forEach((e) => {
-    e.addEventListener('click', () => {
-      window.open(currentWork.popupDescription.demoLink);
+    document.querySelector('.closeTab').addEventListener('click', () => {
+        document.body = previousBody;
+        window.location.href = 'index.html#My-works';
     });
-  });
 
-  document.querySelectorAll('.see-source').forEach((e) => {
-    e.addEventListener('click', () => {
-      window.open(currentWork.popupDescription.source);
+    document.querySelectorAll('.see-lives').forEach((e) => {
+        e.addEventListener('click', () => {
+            window.open(currentWork.popupDescription.demoLink);
+        });
     });
-  });
+
+    document.querySelectorAll('.see-source').forEach((e) => {
+        e.addEventListener('click', () => {
+            window.open(currentWork.popupDescription.source);
+        });
+    });
 }
 
 const clickClick = document.querySelectorAll('.b');
 clickClick.forEach((e) => {
-  e.addEventListener('click', pop);
+    e.addEventListener('click', pop);
 });
 
 const form = document.getElementsByTagName('form')[0];
@@ -123,44 +123,44 @@ const emailError = document.querySelector('#error');
 const reg = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
 
 email.addEventListener('input', () => {
-  if (reg.test(email.value)) {
-    emailError.innerHTML = '';
-    email.classList.remove('invalid');
-  }
+    if (reg.test(email.value)) {
+        emailError.innerHTML = '';
+        email.classList.remove('invalid');
+    }
 });
 
 form.addEventListener('submit', (event) => {
-  if (!reg.test(email.value.trim())) {
-    email.classList.add('invalid');
-    emailError.innerHTML = 'Error: "Email should be in lowercase"';
-    event.preventDefault();
-  }
+    if (!reg.test(email.value.trim())) {
+        email.classList.add('invalid');
+        emailError.innerHTML = 'Error: "Email should be in lowercase"';
+        event.preventDefault();
+    }
 });
 
 function toStore() {
-  const storeForm = {
-    name: '',
-    mail: '',
-    msg: '',
-  };
+    const storeForm = {
+        name: '',
+        mail: '',
+        msg: '',
+    };
 
-  storeForm.name = document.getElementById('name').value;
-  storeForm.mail = document.getElementById('mail').value;
-  storeForm.msg = document.getElementById('msg').value;
+    storeForm.name = document.getElementById('name').value;
+    storeForm.mail = document.getElementById('mail').value;
+    storeForm.msg = document.getElementById('msg').value;
 
-  localStorage.setItem('storeForm', JSON.stringify(storeForm));
+    localStorage.setItem('storeForm', JSON.stringify(storeForm));
 }
 document.getElementById('name').addEventListener('input', toStore);
 document.getElementById('mail').addEventListener('input', toStore);
 document.getElementById('msg').addEventListener('input', toStore);
 
 function toFill() {
-  const restoredSession = JSON.parse(localStorage.getItem('storeForm'));
-  if (Object.keys(restoredSession).length > 0) {
-    document.getElementById('name').value = restoredSession.name;
-    document.getElementById('mail').value = restoredSession.mail;
-    document.getElementById('msg').value = restoredSession.msg;
-  }
+    const restoredSession = JSON.parse(localStorage.getItem('storeForm'));
+    if (Object.keys(restoredSession).length > 0) {
+        document.getElementById('name').value = restoredSession.name;
+        document.getElementById('mail').value = restoredSession.mail;
+        document.getElementById('msg').value = restoredSession.msg;
+    }
 }
 
-window.onload = toFill();
+window.onload = toStore();
