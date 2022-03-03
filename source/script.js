@@ -137,27 +137,35 @@ form.addEventListener('submit', (event) => {
     }
 });
 
+
+document.getElementById('name').addEventListener('input',toStore);
+document.getElementById('mail').addEventListener('input',toStore);
+document.getElementById('msg').addEventListener('input',toStore);
+
+
+
 function toStore() {
     let storeForm = {
-        'name': '',
-        'email': '',
-        'msg': ''
+        name: '',
+        mail: '',
+        msg: ''
     };
 
-    storeForm.main = document.getElementById('name');
-    storeForm.main = document.getElementById('mail');
-    storeForm.main = document.getElementById('msg');
+    storeForm.name = document.getElementById('name').value;
+    storeForm.mail = document.getElementById('mail').value;
+    storeForm.msg = document.getElementById('msg').value;
 
     localStorage.setItem('storeForm', JSON.stringify(storeForm));
 }
 
 function toFill() {
+
     let restoredSession = JSON.parse(localStorage.getItem('storeForm'));
     document.getElementById('name').value = restoredSession.name;
     document.getElementById('mail').value = restoredSession.mail;
     document.getElementById('msg').value = restoredSession.msg;
 }
 
+window.onload=toFill();
 
 
-console.log(restoredSession);
