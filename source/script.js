@@ -137,10 +137,6 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-document.getElementById('name').addEventListener('input', toStore);
-document.getElementById('mail').addEventListener('input', toStore);
-document.getElementById('msg').addEventListener('input', toStore);
-
 function toStore() {
   const storeForm = {
     name: '',
@@ -154,6 +150,9 @@ function toStore() {
 
   localStorage.setItem('storeForm', JSON.stringify(storeForm));
 }
+document.getElementById('name').addEventListener('input', toStore);
+document.getElementById('mail').addEventListener('input', toStore);
+document.getElementById('msg').addEventListener('input', toStore);
 
 function toFill() {
   const restoredSession = JSON.parse(localStorage.getItem('storeForm'));
