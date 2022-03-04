@@ -304,6 +304,7 @@ h6 {
   align-items: center;
   gap: 16px;
   margin: auto;
+  width: 95%;
 }
 
 .projet1 {
@@ -767,10 +768,14 @@ button:active {
   }
 
   .work {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .line {
+    display: none;
+  }
+
+  .break {
     display: none;
   }
 
@@ -943,6 +948,10 @@ button:active {
 
   .work {
     font-size: 30px;
+  }
+
+  .break {
+    display: none;
   }
 
   .line {
@@ -1123,8 +1132,12 @@ button:active {
   }
 
   .work {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 100px;
+  }
+
+  .break {
+    display: none;
   }
 
   .line {
